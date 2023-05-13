@@ -1,0 +1,17 @@
+
+.blue_bg {
+    background-color: #f3a20d;
+    padding: 35px 0;
+}
+
+.blue_bg .titlepage {
+    text-align: center;
+}
+
+.titlepage h2 {
+    font-size: 35px;
+    color: #141414;
+    line-height: 40px;
+    font-weight: bold;
+    padding: 0;
+}
