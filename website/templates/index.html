@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/layerslider.css' %}">
-  <script src="{% static  'js/vendor/modernizr.js'%}"></script>
+  <script src="{% static 'js/vendor/modernizr.js'%}"></script>
 </head><!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -43,10 +43,10 @@
                 <div class="nav-menu">
                   <ul class="nav navbar-nav menu-bar">
                     <li>
-                      <a href="" url="home'" class="active">Home</a>
+                      <a href="{% url 'home' %}" class="active">Home</a>
                     </li>
                     <li>
-                      <a href="" url="about'">about</a>
+                      <a href="{% url 'about' %}">about</a>
                     </li>
                     <li>
                       <a>gallery</a>
