@@ -1,86 +1,7 @@
-<!DOCTYPE html>
-<html class="no-js" lang="">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=us-ascii">
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-  <title>soccer zeal</title>
-  <link rel="shortcut icon" href="soccerzeal.jpg">
-  <link rel="stylesheet" href="vendor.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="he.css">
-  <link rel="stylesheet" type="text/css" href="css/layerslider.css">
-  <script src="js/vendor/modernizr.js"></script>
-</head>
-<body>
-  <!--[if lt IE 10]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
-  <div class="wrapper">
-    <header class="header-main">
-      <div class="header-upper">
-        <div class="container">
-          <div class="row">
-            <ul>
-              <li>
-                <a href="login.html">Login</a>
-              </li>
-              <li>
-                <a href="register.html">Register</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="header-lower clearfix">
-        <div class="container">
-          <div class="row">
-            <h1 class="logo"><a href="inde.html"><img src="image/android-chrome-192x192.png" alt="image"></a></h1>
-            <div class="menubar">
-              <nav class="navbar">
-                <div class="nav-wrapper">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span></button>
-                  </div>
-                  <div class="nav-menu">
-                    <ul class="nav navbar-nav menu-bar">
-                      <li>
-                        <a href="{% url 'home' %}" class="active">Home</a>
-                      </li>
-                      <li>
-                        <a href="{% url 'about'%}">about</a>
-                      </li>
-                      <li>
-                        <a>gallery</a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="gallery02.html">gallery column two</a>
-                          </li>
-                          <li>
-                            <a href="gallery03.html">gallery column 03</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="blog.html">blog</a>
-                      </li>
-                      <li>
-                        <a href="contact.html">contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-            </div>
-            <div class="social">
-              <a href="https://www.facebook.com/soccer.zeal.2023" class="facebook"></a> <a href="https://twitter.com/ZealSoccer" class="twitter"></a><a href="https://www.instagram.com/scoccerzeal2023/" class="twitter"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block Content %}
     <div>
       <div class="blue_bg">
         <div class="container">
@@ -113,27 +34,4 @@
         <input type="submit" value="Login">
       </form>
     </div>
-    <footer class="footer-type01">
-      <div class="container">
-        <div class="footer-type02">
-          <div class="container">
-            <div class="row">
-              <a href="{% url 'home' %}" class="footer-logo"><img src="images/soccerzeal.jpg" alt="image"></a>
-              <div class="footer-appstore">
-                <figure>
-                  <a href="#"><img src="images/appstore/apple.png" alt="image"></a>
-                </figure>
-                <figure>
-                  <a href="#"><img src="images/appstore/google.png" alt="image"></a>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="js/vendor/vendor.js"></script> 
-  <script src="js/main.js"></script>
-</body>
-</html>
+  {% endblock Content%}
