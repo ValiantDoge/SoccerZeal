@@ -7,10 +7,15 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/static/fonts/fontawesome-webfont93e3.eot?v=4.4.0");
-  src: url("/static/fonts/fontawesome-webfontd41d.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("/static/fonts/fontawesome-webfont93e3.woff2?v=4.4.0") format("woff2"), url("/static/fonts/fontawesome-webfont93e3.woff?v=4.4.0") format("woff"), url("/static/fonts/fontawesome-webfont93e3.ttf?v=4.4.0") format("truetype"), url("/static/fonts/fontawesome-webfont93e3.svg?v=4.4.0#fontawesomeregular") format("svg");
+  src: url("/static/fonts/fontawesome-webfont93e3.eot");
+  src: url("/static/fonts/fontawesome-webfontd41d.eot") format("embedded-opentype"), 
+  url("/static/fonts/fontawesome-webfont93e3.woff2") format("woff2"), 
+  url("/static/fonts/fontawesome-webfont93e3.woff") format("woff"), 
+  url("/static/fonts/fontawesome-webfont93e3.ttf") format("truetype"), 
+  url("/static/fonts/fontawesome-webfont93e3.svg") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal; 
+}
 
 .fa {
   display: inline-block;
