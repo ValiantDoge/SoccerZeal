@@ -3,6 +3,8 @@
 *.pot
 *.pyc
 website/__pycache__
+soccerzeal/__pycache__
+__pycache__
 db.sqlite3
 media
 
