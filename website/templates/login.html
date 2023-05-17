@@ -18,6 +18,7 @@
       <br>
       <h1 align="center">Login</h1>
       <form onsubmit="alert('Logged in Successfully!');" method="post" align="center" id="loginform" class="login_form" name="loginform">
+        {% csrf_token %}
         <table align="center">
           <tr>
             <td>Enter Username:&nbsp;</td>
