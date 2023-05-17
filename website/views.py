@@ -93,13 +93,13 @@ def clubHistory(request):
 
 def gallery(request):
     context={
-        'nbar': 'gallery'
+        'wad': 'gallery'
     }
     return render(request, 'gallery02.html', context)
 
 def gallery2(request):
     context={
-        'nbar': 'gallery2'
+        'nbar': 'gallery'
     }
     return render(request, 'gallery03.html', context)
 

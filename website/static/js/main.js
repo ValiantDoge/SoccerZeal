@@ -548,25 +548,25 @@ $(document).ready(function () {
        });
     });
 
-    /*-------------- contact form -----------*/
+    // /*-------------- contact form -----------*/
 
 
-    $('.formcontact').submit(function(event){
-      event.preventDefault();
-      var formdata = $('.formcontact').serializeArray();
-      $.ajax({
-        url: 'php/contact.php',
-        type: 'POST',
-        async: true,
-        data: formdata,     
-      }).done(function(data) {
-            $('.formcontact .form-message').removeClass('hidden').html(data);
-            $('.formcontact .btn').attr('disabled', 'disabled');
-            $('.formcontact' ).each(function () {
-                this.reset(); //CLEARS THE FORM AFTER SUBMISSION
-            });
-        });
-    });
+    // $('.formcontact').submit(function(event){
+    //   event.preventDefault();
+    //   var formdata = $('.formcontact').serializeArray();
+    //   $.ajax({
+    //     url: 'php/contact.php',
+    //     type: 'POST',
+    //     async: true,
+    //     data: formdata,     
+    //   }).done(function(data) {
+    //         $('.formcontact .form-message').removeClass('hidden').html(data);
+    //         $('.formcontact .btn').attr('disabled', 'disabled');
+    //         $('.formcontact' ).each(function () {
+    //             this.reset(); //CLEARS THE FORM AFTER SUBMISSION
+    //         });
+    //     });
+    // });
 
     /* ---------------- image gallery ---------*/
 
@@ -960,7 +960,7 @@ $(document).ready(function () {
 
     function initMap() {
       // Create a map object and specify the DOM element for display.
-      var _location = new google.maps.LatLng(15.595619848147807, 73.81402820232807);
+      var _location = new google.maps.LatLng(15.598551419770033, 73.8161890254641);
       map = new google.maps.Map(document.getElementById('map-section'), {
         scrollwheel: false,
         panControl: false,
