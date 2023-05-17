@@ -2,71 +2,151 @@
 {% load static %}
 
 {% block Content %}
-<div class="banner" id="layerSlider" style="width: 100%;">
-  <div class="ls-slide" data-ls="transition3d: 33,15; slidedelay: 8000 ; durationin:0;">
-    <img src="{% static 'images/banner/background01.jpg' %}" class="ls-bg" alt="Slide background">
-    <div class="ls-l layercontent01" style="top: 50%; left: 50%; z-index:4;" data-ls="offsetxin:left; offsetxout:right; durationin: 4000; parallaxlevel: 8;">
-    <img src="{% static 'images/banner/player.png' %}" alt="innerimage" class="img-responsive" style="max-width: 100% !important ;"></div>
-    <img src="{% static 'images/banner/ball.png' %}" alt="innerimage" class="ls-l layercontent02" style="z-index:5;" data-ls="offsetxin: right; offsetxout:left; rotatein:-360; easingin: easeoutquart; durationin: 4000; delayin: 250; parallaxlevel: -5;"> 
-    <img src="{% static 'images/banner/front_particles.png' %}" alt="particles" class="ls-l" style="z-index:3; left:0;" data-ls="offsetxin: left; offsetxout:left; scalexin:50; easingin: easeoutquart; durationin: 3000; delayin: 250;"> 
-    <img src="{% static 'images/banner/back_particles.png' %}" alt="particles" class="ls-l" style="z-index:3; left:50%;" data-ls="offsetxin: left; offsetxout:left; scalein:90; easingin: easeoutquart; durationin: 3000; delayin: 250;">
-    <h2 class="ls-l bannertext layercontent03" data-ls="offsetxin:left; rotatexin:90 ; durationin: 3500;">action</h2>
-    <h2 class="ls-l bannertext01 italic01 layercontent04" data-ls="offsetxin:left; scalexin:9; durationin: 4000;">starts</h2>
-    <h4 class="ls-l bannertext02 layercontent05" data-ls="offsetxin:left; rotatexin:90 ; durationin: 4500;">from</h4>
-    <h2 class="ls-l bannertext01 layercontent06" style="left: 87%; top:760px;" data-ls="offsetxin:left; flipxin:90 ; durationin: 5000;">18<sup>th</sup></h2>
-    <h6 class="ls-l bannertext03 layercontent07" data-ls="offsetxin:left; flipxin:90 ; durationin: 6000;">April , 2023</h6>
-  </div>
-</div>
-<div class="banner-text">
-  <div class="container">
-    <div class="row">
-      action start from 18<sup>st</sup> April , 2023.
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <title>Soccer zeal</title>
+  <link rel="shortcut icon" href="{% static 'images/soccerzeal.jpg' %}">
+  <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/layerslider.css' %}">
+  <script src="{% static 'js/vendor/modernizr.js'%}"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head><!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="wrappe" r="">
+  <header class="header-main">
+    <div class="header-upper">
+      <div class="container">
+        <div class="row">
+          <ul>
+            <li>
+              <a href="login.html">Login</a>
+            </li>
+            <li>
+              <a href="register.html">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-lower clearfix">
+      <div class="container">
+        <div class="row">
+          <h1 class="logo"><a href="{% url 'home' %}"><img src="{% static 'image/android-chrome-192x192.png' %}" alt="image"></a></h1>
+          <div class="menubar">
+            <nav class="navbar">
+              <div class="nav-wrapper">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span></button>
+                </div>
+                <div class="nav-menu">
+                  <ul class="nav navbar-nav menu-bar">
+                    <li>
+                      <a href="{% url 'home' %}" class="active">Home</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'about' %}">about</a>
+                    </li>
+                    <li>
+                      <a>gallery</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="gallery02.html">gallery column two</a>
+                        </li>
+                        <li>
+                          <a href="gallery03.html">gallery column 03</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="blog.html">blog</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/soccer.zeal.2023" class="facebook"><i class="bi bi-facebook"></i></a> <a href="https://twitter.com/ZealSoccer" class="twitter"><i class="bi bi-twitter"></i></a><a href="https://www.instagram.com/scoccerzeal2023/" class="twitter"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="banner" id="layerSlider" style="width: 100%;">
+    <div class="ls-slide" data-ls="transition3d: 33,15; slidedelay: 8000 ; durationin:0;">
+      <img src="{% static 'images/banner/background01.jpg' %}" class="ls-bg" alt="Slide background">
+      <div class="ls-l layercontent01" style="top: 50%; left: 50%; z-index:4;" data-ls="offsetxin:left; offsetxout:right; durationin: 4000; parallaxlevel: 8;">
+      <img src="{% static 'images/banner/player.png' %}" alt="innerimage" class="img-responsive" style="max-width: 100% !important ;"></div>
+      <img src="{% static 'images/banner/ball.png' %}" alt="innerimage" class="ls-l layercontent02" style="z-index:5;" data-ls="offsetxin: right; offsetxout:left; rotatein:-360; easingin: easeoutquart; durationin: 4000; delayin: 250; parallaxlevel: -5;"> 
+      <img src="{% static 'images/banner/front_particles.png' %}" alt="particles" class="ls-l" style="z-index:3; left:0;" data-ls="offsetxin: left; offsetxout:left; scalexin:50; easingin: easeoutquart; durationin: 3000; delayin: 250;"> 
+      <img src="{% static 'images/banner/back_particles.png' %}" alt="particles" class="ls-l" style="z-index:3; left:50%;" data-ls="offsetxin: left; offsetxout:left; scalein:90; easingin: easeoutquart; durationin: 3000; delayin: 250;">
+      <h2 class="ls-l bannertext layercontent03" data-ls="offsetxin:left; rotatexin:90 ; durationin: 3500;">action</h2>
+      <h2 class="ls-l bannertext01 italic01 layercontent04" data-ls="offsetxin:left; scalexin:9; durationin: 4000;">starts</h2>
+      <h4 class="ls-l bannertext02 layercontent05" data-ls="offsetxin:left; rotatexin:90 ; durationin: 4500;">from</h4>
+      <h2 class="ls-l bannertext01 layercontent06" style="left: 87%; top:760px;" data-ls="offsetxin:left; flipxin:90 ; durationin: 5000;">18<sup>th</sup></h2>
+      <h6 class="ls-l bannertext03 layercontent07" data-ls="offsetxin:left; flipxin:90 ; durationin: 6000;">April , 2023</h6>
     </div>
   </div>
-</div>
-<section class="latestvideo">
-  <div class="container">
-    <div class="row">
-      <h2 class="heading">latest <span>video</span></h2>
-      <div class="video-wrap clearfix">
-        <div class="video-content clearfix">
-          <a class="btn-up"></a>
-          <ul class="videoLive clearfix" id="videoSlide" role="tablist">
-            <li>
-              <a class="changeVideo" data-yt-video="W7qWa52k-nE">
-              <div>
-                <span>November 27, 2022</span> FINALE | All India Football Tournament 2022 : <span>Live audio and video</span>
-              </div></a>
-            </li>
-            <li>
-              <a class="changeVideo" data-yt-video="YtXNB-0cFBo">
-              <div>
-                <span>March 10, 2023</span> Maina Sports Club defeat CRSC, Navelim 2-1 in a GFA Under-13 boys league football tournament : <span>Live audio and video</span>
-              </div></a>
-            </li>
-            <li>
-              <a class="changeVideo" data-yt-video="W7qWa52k-nE">
-              <div>
-                <span>February 26, 2022</span> Chelsea FC U-14 vs FC Goa U-15 | Next Gen Mumbai Cup : <span>Live audio and video</span>
-              </div></a>
-            </li>
-            <li>
-              <a class="changeVideo" data-yt-video="yw3Cw5eG1wM">
-              <div>
-                <span>November 23, 2023</span> LIVE : Goa Football Association | Goa Professional League Launch | Prudent | 231122: <span>Live audio and video</span>
-              </div></a>
-            </li>
-            <li>
-              <a class="changeVideo" data-yt-video="W7qWa52k-nE">
-              <div>
-                <span>December 16, 2023</span> SANTOSH TROPHY MISERY FOR GOA YET AGAIN - Herald: <span>Live audio and video</span>
-              </div></a>
-            </li>
-          </ul><a class="btn-down"></a>
-        </div>
-        <div class="video-show">
-          <div class="video-container" id="video01" data-current-video="W7qWa52k-nE">
-            <iframe width="866" height="487" src="https://www.youtube.com/embed/_KOY8_GiBsY" title="Euro Truck Simulator 2 | Got Boom Surprise From LG ULTRAGEAR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <div class="banner-text">
+    <div class="container">
+      <div class="row">
+        action start from 18<sup>st</sup> April , 2023.
+      </div>
+    </div>
+  </div>
+  <section class="latestvideo">
+    <div class="container">
+      <div class="row">
+        <h2 class="heading">latest <span>video</span></h2>
+        <div class="video-wrap clearfix">
+          <div class="video-content clearfix">
+            <a class="btn-up"></a>
+            <ul class="videoLive clearfix" id="videoSlide" role="tablist">
+              <li>
+                <a class="changeVideo" data-yt-video="W7qWa52k-nE">
+                <div>
+                  <span>November 27, 2022</span> FINALE | All India Football Tournament 2022 : <span>Live audio and video</span>
+                </div></a>
+              </li>
+              <li>
+                <a class="changeVideo" data-yt-video="YtXNB-0cFBo">
+                <div>
+                  <span>March 10, 2023</span> Maina Sports Club defeat CRSC, Navelim 2-1 in a GFA Under-13 boys league football tournament : <span>Live audio and video</span>
+                </div></a>
+              </li>
+              <li>
+                <a class="changeVideo" data-yt-video="W7qWa52k-nE">
+                <div>
+                  <span>February 26, 2022</span> Chelsea FC U-14 vs FC Goa U-15 | Next Gen Mumbai Cup : <span>Live audio and video</span>
+                </div></a>
+              </li>
+              <li>
+                <a class="changeVideo" data-yt-video="yw3Cw5eG1wM">
+                <div>
+                  <span>November 23, 2023</span> LIVE : Goa Football Association | Goa Professional League Launch | Prudent | 231122: <span>Live audio and video</span>
+                </div></a>
+              </li>
+              <li>
+                <a class="changeVideo" data-yt-video="W7qWa52k-nE">
+                <div>
+                  <span>December 16, 2023</span> SANTOSH TROPHY MISERY FOR GOA YET AGAIN - Herald: <span>Live audio and video</span>
+                </div></a>
+              </li>
+            </ul><a class="btn-down"></a>
+          </div>
+          <div class="video-show">
+            <div class="video-container" id="video01" data-current-video="W7qWa52k-nE">
+              <iframe width="866" height="487" src="https://www.youtube.com/embed/_KOY8_GiBsY" title="Euro Truck Simulator 2 | Got Boom Surprise From LG ULTRAGEAR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> class=liveVideo allowfullscreen=""&gt;
+            </div>
           </div>
         </div>
       </div>
