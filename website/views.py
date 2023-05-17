@@ -97,6 +97,12 @@ def gallery(request):
     }
     return render(request, 'gallery02.html', context)
 
+def gallery2(request):
+    context={
+        'nbar': 'gallery2'
+    }
+    return render(request, 'gallery03.html', context)
+
 def playerDetails(request):
     context={
         'nbar': 'playerDetails'
