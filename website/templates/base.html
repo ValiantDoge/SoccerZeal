@@ -10,10 +10,13 @@
     <title>{% block title %}Soccer Zeal{% endblock title %}</title>
 
     {% block CSS %}
-    <link rel="shortcut icon" href="{% static 'images/soccerzeal.jpg' %}">
-    <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/layerslider.css' %}">
+    <title>Soccer zeal</title>
+  <link rel="shortcut icon" href="{% static 'images/soccerzeal.jpg' %}">
+  <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/layerslider.css' %}">
+  <script src="{% static 'js/vendor/modernizr.js'%}"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {% endblock CSS %}
 
     {% block JS %}
@@ -81,9 +84,9 @@
               </nav>
             </div>
             <div class="social">
-              <a href="https://www.facebook.com/soccer.zeal.2023" class="facebook"></a> 
-              <a href="https://twitter.com/ZealSoccer" class="twitter"></a>
-              <a href="https://www.instagram.com/scoccerzeal2023/" class="instagram"></a>
+              <a href="https://www.facebook.com/soccer.zeal.2023" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://twitter.com/ZealSoccer" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.instagram.com/scoccerzeal2023/" class="twitter"><i class="bi bi-instagram"></i></a>
             </div>
           </div>
         </div>
@@ -181,13 +184,13 @@
         <div class="footer-container">
           <ul class="clearfix">
             <li>
-              <a href="https://www.facebook.com/soccer.zeal.2023" class="bigsocial-link"></a>
+              <a href="https://www.facebook.com/soccer.zeal.2023" class="bigsocial-link"  target="_blank"><i class="bi bi-facebook"></i></a>
             </li>
             <li>
-              <a href="https://twitter.com/ZealSoccer" class="bigsocial-link" target="_blank"></a>
+              <a href="https://twitter.com/ZealSoccer" class="bigsocial-link" target="_blank"><i class="bi bi-twitter"></i></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/scoccerzeal2023/" class="bigsocial-link"></a>
+              <a href="https://www.instagram.com/scoccerzeal2023/" class="bigsocial-link" target="_blank"><i class="bi bi-instagram"></i></a>
             </li>
           </ul>
         </div>
