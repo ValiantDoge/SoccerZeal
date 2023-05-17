@@ -506,7 +506,7 @@ $(document).ready(function () {
         $('#layerSlider').layerSlider({
             autoStart : false,
             skin : 'noskin',
-            skinsPath : '/css/skins/'
+            skinsPath : '/static/css/skins/'
         });
     }
 

@@ -13,7 +13,6 @@
     <link rel="shortcut icon" href="{% static 'images/soccerzeal.jpg' %}">
     <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
     <link rel="stylesheet" type="text/css" href="{% static 'css/layerslider.css' %}">
     {% endblock CSS %}
 
@@ -24,17 +23,17 @@
   </head>
 
 
-  <div class="wrappe" r="">
+  <div class="wrapper">
     <header class="header-main">
       <div class="header-upper">
         <div class="container">
           <div class="row">
             <ul>
               <li>
-                <a href="login.html">Login</a>
+                <a href="{% url 'user_login' %}">Login</a>
               </li>
               <li>
-                <a href="register.html">Register</a>
+                <a href="{% url 'user_register' %}">Register</a>
               </li>
             </ul>
           </div>
@@ -62,18 +61,18 @@
                         <a>gallery</a>
                         <ul class="sub-menu">
                           <li>
-                            <a href="gallery02.html">gallery column two</a>
+                            <a href="{% url 'gallery' %}">gallery column two</a>
                           </li>
                           <li>
-                            <a href="gallery03.html">gallery column 03</a>
+                            <a href="{% url 'gallery2' %}">gallery column 03</a>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="blog.html">blog</a>
+                        <a href="{% url 'blog' %}">blog</a>
                       </li>
                       <li>
-                        <a href="contact.html">contact</a>
+                        <a href="{% url 'contact' %}">contact</a>
                       </li>
                     </ul>
                   </div>
@@ -81,7 +80,9 @@
               </nav>
             </div>
             <div class="social">
-              <a href="https://www.facebook.com/soccer.zeal.2023" class="facebook"></a> <a href="https://twitter.com/ZealSoccer" class="twitter"></a><a href="https://www.instagram.com/scoccerzeal2023/" class="twitter"></a>
+              <a href="https://www.facebook.com/soccer.zeal.2023" class="facebook"></a> 
+              <a href="https://twitter.com/ZealSoccer" class="twitter"></a>
+              <a href="https://www.instagram.com/scoccerzeal2023/" class="instagram"></a>
             </div>
           </div>
         </div>
@@ -206,3 +207,7 @@
 <script src="{% static 'js/vendor/vendor.js' %}"></script> 
 <script src="{% static 'js/main.js' %}"></script>
 {% endblock Js_footer %}
+
+{% block page_js %}
+
+{% endblock page_js %}

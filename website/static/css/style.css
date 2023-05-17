@@ -6489,6 +6489,10 @@ h6 {
     border-color: #3055a0 !important;
     background: #3055a0;
     color: white; }
+  .instagram:hover {
+      border-color: #B82FAE !important;
+      background: #B82FAE;
+      color: white; }
   .twitter:hover {
     border-color: #41b5cb !important;
     background: #41b5cb;
@@ -9715,6 +9719,8 @@ a.blacklrnmore {
         color: #3055a0; }
       .social-share .social-wraps a.twitter-icon:hover {
         color: #41b5cb; }
+      .social-share .social-wraps a.instagram-icon:hover {
+          color: #B82FAE; }
       .social-share .social-wraps a.behance-icon:hover {
         color: #41b5cb; }
     .social-share .social-wraps i {
