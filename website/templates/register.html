@@ -17,26 +17,33 @@
       <br>
       <br>
       <h1 align="center">Register</h1>
-      <form action="register.php" method="post" align="center">
+      <form onsubmit="alert('Registered Successfully!');" method="post" align="center">
+        {% csrf_token %}
         <table align="center">
           <tr>
-            <td>Enter First Name</td>
-            <td><input type="text" name="ufname" value="" required=""><br></td>
+            <td>Enter First Name:&nbsp;</td>
+            <td><input type="text" name="ufname" value="" class='form-control' required><br></td>
           </tr>
           <tr>
-            <td>Enter Last Name</td>
-            <td><input type="text" name="ulname" value="" required=""><br></td>
+            <td>Enter Last Name:&nbsp;</td>
+            <td><input type="text" name="ulname" value="" class='form-control' required><br></td>
           </tr>
           <tr>
-            <td>Enter Username</td>
-            <td><input type="text" name="uusername" value="" required=""><br></td>
+            <td>Enter Username:&nbsp;</td>
+            <td><input type="text" name="uusername" value="" class='form-control' required><br></td>
           </tr>
           <tr>
-            <td>Enter Password</td>
-            <td><input type="password" name="upassword" value="" required=""><br></td>
+            <td>Enter Password:&nbsp;</td>
+            <td><input type="password" name="upassword" value="" class='form-control' required><br></td>
           </tr>
-        </table>Already Have An Account? <a href="login.html">Login Now!</a><br>
-        <button type="submit" value="Register" class="login_register_button">Register</button> <input type="submit" value="Login">
+          
+            
+         
+        </table>
+
+            <center>Already Have An Account? <a href="{% url 'user_login' %}" class='ui red horizontal label'>Login Now!</a><br></center><br>
+            <center><button type="submit" value="Register" class="ui button red">Register</button></center>
+        
       </form>
     </div>
  {% endblock Content%}
