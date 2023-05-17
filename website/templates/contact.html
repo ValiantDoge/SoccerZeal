@@ -34,33 +34,75 @@
         <div class="row">
           <div class="contact_form">
             <h2 class="heading">contact us <span>by form</span></h2>
-            <form method="post" action="add.php" data-parsley-validate="" name="contact" class="formcontact clearfix" id="contact">
-              <div class="form-group">
-                <input type="text" class="form-control" name="name" placeholder="Name" required="" data-parsley-required-message="please insert Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="phone" placeholder="Phone" required="" data-parsley-required-message="please insert Phone No">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" placeholder="subject" required="" data-parsley-required-message="please insert subject">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="Email" required="" data-parsley-required-message="please insert Email">
-              </div>
-              <div class="form-group1">
-                <textarea class="form-control textas" name="message" placeholder="Message" required="" data-parsley-minlength="10" data-parsley-minlength-message="Come on! You need to enter at least a 10 character comment.." data-parsley-validation-threshold="10" data-parsley-maxlength="100"></textarea>
-              </div><input type="submit" onclick="this.parentElement.style.display='none';" class="btn btn-red">send Us <a href="" url="home'"></a> <!-- <div class="alert">
-                            <span class="btn btn-red" onclick="this.parentElement.style.display='none';"></span>
-                            Message recorded Successfully.
-                          </div> -->
+
+            <form method="post" class="formcontact" id="contact-form">
+              {% csrf_token %}
+              <br>
+              {{form.as_p}}
+              <br>
+              <input type="submit" class="btn btn-red">
+
               <div class="form-message"></div>
             </form>
+
           </div>
         </div>
       </div>
     </section>
 {% endblock Content %}
 
+
+
 {% block page_js %}
+<script type="text/javascript">
+  // Ajax
+$(document).on('submit', '#contact-form', function (e) {
+e.preventDefault();
+$('.loading').addClass("d-block")
+
+$.ajax({
+    type: 'POST',
+    url: '{% url "contact" %}',
+    data: {
+        name: $('#name').val(),
+        email: $('#email').val(),
+        subject: $('#subject').val(),
+        message: $('#message').val(),
+        csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
+    },
+    success: function (data) {
+        $('#name').val('');
+        $('#email').val('');
+        $('#subject').val('');
+        $('#message').val('');
+        $(".sent-message").addClass("d-block")
+
+    },
+    error: function (data) {
+        $(".error-message").addClass("d-block")
+        $('.loading').removeClass("d-block")
+    },
+}).done((response) => {
+    $('.loading').removeClass("d-block")
+})
+})
+
+$(document).ready(function () {
+// Set div display to none
+$("#closeBtn").click(function () {
+    // $("#closeBtn").css("display", "none");
+    $(".sent-message").removeClass("d-block")
+    
+});
+
+$("#closeBtnError").click(function () {
+    // $("#closeBtn").css("display", "none");
+    $(".error-message").removeClass("d-block")
+});
+
+});
+</script>
+
+
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 {% endblock page_js %}
