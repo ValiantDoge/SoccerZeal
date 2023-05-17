@@ -17,21 +17,30 @@
       <br>
       <br>
       <h1 align="center">Login</h1>
-      <form action="login.php" method="post" align="center" id="loginform" class="login_form" name="loginform">
+      <form onsubmit="alert('Logged in Successfully!');" method="post" align="center" id="loginform" class="login_form" name="loginform">
         <table align="center">
           <tr>
-            <td>Enter Username</td>
-            <td><input type="text" name="uusername" value="" size="30" required=""></td>
+            <td>Enter Username:&nbsp;</td>
+            <td><input type="text" name="uusername" value="" size="30" class='form-control' required></td>
           </tr>
           <tr>
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td>Enter Password</td>
-            <td><input type="password" name="upassword" value="" size="30" required=""></td>
+            <td>Enter Password:&nbsp;</td>
+            <td><input type="password" name="upassword" value="" size="30" class='form-control' required></td>
           </tr>
+          <tr>
+            
+            <td></td>
+          <td>
+            <br>
+            <center><input type="submit" value="Login" class="ui button red"></center>
+          </td>
+          <br> 
+        </tr>
         </table><!--<a href="register.html">Register Now!</a><br> -->
-        <input type="submit" value="Login">
+        
       </form>
     </div>
   {% endblock Content%}
