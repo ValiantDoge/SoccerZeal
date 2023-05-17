@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404, redirect, render
 from django.conf import settings
-from django.http import BadHeaderError
+from django.http import BadHeaderError, HttpResponse
 
 # Create your views here.
 
