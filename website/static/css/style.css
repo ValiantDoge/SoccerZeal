@@ -6867,7 +6867,7 @@ h6 {
 
 .footer-type02 {
   padding: 30px 0;
-  background-image: url("images/background/heroesBg.jpg");
+  background-image: url("/static/images/background/heroesBg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -7396,7 +7396,7 @@ h6 {
       position: relative; }
       .booking-fig h2:after {
         position: absolute;
-        background: url("images/logo.png");
+        background: url("/static/images/logo.png");
         content: '';
         width: 140px;
         top: -119px;
@@ -7522,7 +7522,7 @@ h6 {
 /* -------------- latest result section -----------*/
 .latestResult {
   padding: 100px 0;
-  background: url("images/background/latestnews.jpg") no-repeat;
+  background: url("/static/images/background/latestnews.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
   .latestResult h2 {
@@ -7593,7 +7593,7 @@ h6 {
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px;
-      background-image: url("images/result/resultlogo.png");
+      background-image: url("/static/images/result/resultlogo.png");
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -7617,7 +7617,7 @@ h6 {
         left: 60%;
         top: 50px;
         transition: all 0.9s ease;
-        background: url("images/result/resultBoard.png") top right no-repeat; }
+        background: url("/static/images/result/resultBoard.png") top right no-repeat; }
     .latestResult .result .content {
       position: relative;
       min-height: 1px;
@@ -7750,7 +7750,7 @@ h6 {
 
 @media screen and (min-width: 1200px) {
   .latestResult .result-details .figure {
-    background-image: url("images/result/resultlogo.png");
+    background-image: url("/static/images/result/resultlogo.png");
     background-size: inherit;
     background-position: center;
     background-repeat: no-repeat;
@@ -7787,7 +7787,7 @@ h6 {
     padding: 40px 0; }
 
 .bookticket {
-  background-image: url("images/background/ticketbooking.jpg");
+  background-image: url("/static/images/background/ticketbooking.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -7967,7 +7967,7 @@ ul.videoLive {
   height: 600px;
   position: relative;
   overflow: hidden;
-  background: url(images/background/innerpageBg.jpg) center no-repeat;
+  background: url('/static/images/background/innerpageBg.jpg') center no-repeat;
   /* Image Credit: Unsplash.me */
   background-size: cover;
   background-attachment: fixed; }
@@ -7994,22 +7994,22 @@ ul.videoLive {
 
 /*------------ different background --------------*/
 .bg-red {
-  background-image: url("images/background/redBg.jpg");
+  background-image: url("/static/images/background/redBg.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat; }
 
 .bg-blackimg {
-  background-image: url("images/background/blackbg.jpg");
+  background-image: url("/static/images/background/blackbg.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat; }
 
 .bg-white {
-  background: url(images/background/bgBottomRight.png) right bottom no-repeat, url(images/background/bgTopLeft.png) left top no-repeat #f5f5f5; }
+  background: url('/static/images/background/bgBottomRight.png') right bottom no-repeat, url('/static/images/background/bgTopLeft.png') left top no-repeat #f5f5f5; }
 
 .bg-smallwhite {
-  background-image: url("images/background/whiteBg.jpg");
+  background-image: url("/static/images/background/whiteBg.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat; }
@@ -8180,7 +8180,7 @@ section {
     .news_display_container .figure-01 img {
       transition: all 0.4s ease-in-out; }
   .news_display_container .content-01 {
-    background: #000 url(images/background/background-news.jpg);
+    background: #000 url('/static/images/background/background-news.jpg');
     padding: 20px 15px; }
     .news_display_container .content-01 .describtion {
       padding: 10px 0; }
@@ -8331,7 +8331,7 @@ section {
 
 .players {
   padding: 70px 0 0;
-  background-image: url("images/background/heroesBg.jpg");
+  background-image: url("/static/images/background/heroesBg.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat; }
@@ -8369,14 +8369,14 @@ section {
       padding: 0px; }
     .playerDetails li.playinfodetails {
       padding: 20px 20px 20px 20px;
-      background-image: url("images/background/infoBg.jpg");
+      background-image: url("/static/images/background/infoBg.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       transition: all 0.3s ease-in-out; }
     .playerDetails li.playerInfo {
       padding: 0;
-      background-image: url("images/background/infoBg.jpg");
+      background-image: url("/static/images/background/infoBg.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -8527,7 +8527,7 @@ section {
 /*------------ social media ----------- */
 .social-media {
   padding: 70px 0;
-  background-image: url("images/background/socialMediaHomeBg.jpg");
+  background-image: url("/static/images/background/socialMediaHomeBg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -8578,7 +8578,7 @@ section {
         position: relative;
         height: 380px;
         line-height: 380px;
-        background-image: url("images/background/background-news.jpg");
+        background-image: url("/static/images/background/background-news.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
@@ -8666,7 +8666,7 @@ section {
     padding: 15px;
     width: 100%;
     margin: 5px 0 0;
-    background-image: url("images/background/infoBg.jpg");
+    background-image: url("/static/images/background/infoBg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
@@ -8792,7 +8792,7 @@ section {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  background-image: url("images/background/counterBg.jpg");
+  background-image: url("/static/images/background/counterBg.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -8815,7 +8815,7 @@ section {
     font-weight: 400; }
 
 .home_tInfo {
-  background-image: url("images/background/counterBg.jpg");
+  background-image: url("/static/images/background/counterBg.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat; }
@@ -8830,7 +8830,7 @@ section {
   padding: 5px 0; }
 
 .point_table {
-  background-image: url("images/background/counterBg.jpg");
+  background-image: url("/static/images/background/counterBg.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat; }
@@ -9379,7 +9379,7 @@ a.blacklrnmore {
   text-align: center;
   display: none;
   padding: 70px 0;
-  background-image: url("images/product/backgroundd.jpg");
+  background-image: url("/static/images/product/backgroundd.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat; }
@@ -9955,7 +9955,7 @@ a.blacklrnmore {
 
 /*-------- about page --------*/
 .countryclub {
-  background-image: url("images/background/whiteBgBig.jpg");
+  background-image: url("/static/images/background/whiteBgBig.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat; }
@@ -9996,7 +9996,7 @@ a.blacklrnmore {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    background-image: url("images/background/background-news.jpg");
+    background-image: url("/static/images/background/background-news.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10108,7 +10108,7 @@ ul.slick-dots {
 
 /* ------------ player details ---------------*/
 .playerDetails02 {
-  background-image: url("images/background/playerdetailsBg.jpg");
+  background-image: url("/static/images/background/playerdetailsBg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -10126,7 +10126,7 @@ ul.slick-dots {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    background-image: url("images/background/blackblueBg.jpg");
+    background-image: url("/static/images/background/blackblueBg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10578,7 +10578,7 @@ ul.slick-dots {
       width: 33.3333333333%; } }
   .playerDetailsPage-info li:first-of-type {
     padding: 50px;
-    background-image: url("images/background/heroesBg.jpg");
+    background-image: url("/static/images/background/heroesBg.jpg");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat; }
@@ -10595,13 +10595,13 @@ ul.slick-dots {
       font-weight: 400;
       text-transform: capitalize; }
   .playerDetailsPage-info li:nth-of-type(2) {
-    background-image: url("images/player/player01.jpg");
+    background-image: url("/static/images/player/player01.jpg");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     height: 600px; }
   .playerDetailsPage-info li:last-of-type {
-    background-image: url("images/background/heroesBg.jpg");
+    background-image: url("/static/images/background/heroesBg.jpg");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -10885,7 +10885,7 @@ ul.slick-dots {
     color: #b81e20;
     font-weight: 400; }
   .achivement-dtl li:nth-of-type(2) {
-    background-image: url("images/awards/award-d01.jpg");
+    background-image: url("/static/images/awards/award-d01.jpg");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -10991,7 +10991,7 @@ ul.slick-dots {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url("images/error/errorBg.jpg");
+  background-image: url("/static/images/error/errorBg.jpg");
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
