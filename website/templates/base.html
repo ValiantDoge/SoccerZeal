@@ -53,10 +53,10 @@
                   <div class="nav-menu">
                     <ul class="nav navbar-nav menu-bar">
                       <li>
-                        <a href="{% url 'home' %}" class="active">Home</a>
+                        <a href="{% url 'home' %}" class="{% if nbar == 'home' %}active{% endif %}">Home</a>
                       </li>
                       <li>
-                        <a href="{% url 'about' %}">about</a>
+                        <a href="{% url 'about' %}" class="{% if nbar == 'about' %}active{% endif %}">about</a>
                       </li>
                       <li>
                         <a>gallery</a>
@@ -70,10 +70,10 @@
                         </ul>
                       </li>
                       <li>
-                        <a href="{% url 'blog' %}">blog</a>
+                        <a href="{% url 'blog' %}" class="{% if nbar == 'blog' %}active{% endif %}">blog</a>
                       </li>
                       <li>
-                        <a href="{% url 'contact' %}">contact</a>
+                        <a href="{% url 'contact' %}" class="{% if nbar == 'contact' %}active{% endif %}">contact</a>
                       </li>
                     </ul>
                   </div>
