@@ -58,13 +58,13 @@
                   <div class="nav-menu">
                     <ul class="nav navbar-nav menu-bar">
                       <li>
-                        <a href="{% url 'home' %}" class="active">Home</a>
+                        <a href="{% url 'home' %}" class="{% if nbar == 'home' %}active{% endif %}">Home</a>
                       </li>
                       <li>
-                        <a href="{% url 'about' %}">about</a>
+                        <a href="{% url 'about' %}" class="{% if nbar == 'about' %}active{% endif %}">about</a>
                       </li>
                       <li>
-                        <a>gallery</a>
+                        <a class="{% if nbar == 'gallery' %}active{% endif %}">gallery</a>
                         <ul class="sub-menu">
                           <li>
                             <a href="{% url 'gallery' %}">gallery column two</a>
@@ -75,10 +75,10 @@
                         </ul>
                       </li>
                       <li>
-                        <a href="{% url 'blog' %}">blog</a>
+                        <a href="{% url 'blog' %}" class="{% if nbar == 'blog' %}active{% endif %}">blog</a>
                       </li>
                       <li>
-                        <a href="{% url 'contact' %}">contact</a>
+                        <a href="{% url 'contact' %}" class="{% if nbar == 'contact' %}active{% endif %}">contact</a>
                       </li>
                     </ul>
                   </div>
@@ -88,7 +88,7 @@
             <div class="social">
               <a href="https://www.facebook.com/soccer.zeal.2023" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="https://twitter.com/ZealSoccer" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.instagram.com/scoccerzeal2023/" class="twitter"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.instagram.com/scoccerzeal2023/" class="instagram"><i class="bi bi-instagram"></i></a>
             </div>
           </div>
         </div>
